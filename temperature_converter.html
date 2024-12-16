@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="temperature converter.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Temperature Converter</h1>
+    </header>
+	<br><br>
+    <div class="unit">
+      <p>
+        <h2>Choose the unit of input temperature:</h2><br>
+        <input type="radio" name="units" id="C" value="C" />
+        <label for="C"><b>Celcius</b></label>
+        <input type="radio" name="units" id="F" value="F" />
+        <label for="F"><b>Fahrenheit</b></label>
+        <input type="radio" name="units" id="K" value="K" />
+        <label for="K"><b>Kelvin</b></label><br>
+      </p>
+    </div>
+	<br>
+    <div class="input">
+      <label for="temperature"><b>Enter the Temperature:</b></label>
+      <input type="number" class="label" id="temperature" name="temperature">
+    </div>
+	<br><br>
+    <div class="output">
+      <p>Celsius:&nbsp;&nbsp;<span class="label" id="outputCelsius"></span></p>
+      <p>Fahrenheit:&nbsp;&nbsp;<span class="label" id="outputFahrenheit"></span></p>
+      <p>Kelvin:&nbsp;&nbsp;<span class="label" id="outputKelvin"></span></p>
+    </div>
+	<footer>
+	  <p id="copyright">&copy Sukhada Bhoyar 2024</p>
+      <p id="currentTime"></p>
+	</footer>
+      <script src="temperature converter.js"></script>
+  </body>
+</html>
